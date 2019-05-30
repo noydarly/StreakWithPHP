@@ -76,7 +76,7 @@
 		curl_setopt($curlSession, CURLOPT_URL, $url);
        	curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($curlSession, CURLOPT_HTTPHEADER, array(
-            "Authorization: Basic ".base64_encode(API_KEY.":"),
+            "Authorization: Basic ".base64_encode(API_KEY.":".PASSWORD),
             "Content-Type:application/json"
         ));
         curl_setopt($curlSession, CURLOPT_POST, true);
